@@ -1,5 +1,5 @@
 #
-# sma-mqtt-daemon
+# sma-mqtt-reporter
 #
 
 # ------------------------
