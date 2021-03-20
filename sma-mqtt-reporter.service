@@ -1,5 +1,5 @@
 [Unit]
-Description=SMA Reporter MQTT Client/Daemon
+Description=SMA-MQTT Reporter Client/Daemon
 Documentation=
 After=network.target mosquitto.service network-online.target
 Wants=network-online.target
@@ -9,8 +9,8 @@ Requires=network.target
 Type=notify
 User=daemon
 Group=daemon
-WorkingDirectory=/opt/SMA-Reporter-MQTT2HA-Daemon/
-ExecStart=/usr/bin/python3 -u /opt/SMA-Reporter-MQTT2HA-Daemon/sma-mqtt-daemon.py --config /opt/SMA-Reporter-MQTT2HA-Daemon
+WorkingDirectory=/opt/sma-mqtt-reporter/
+ExecStart=/usr/bin/python3 -u /opt/sma-mqtt-reporter/sma-mqtt-reporter.py --config /opt/sma-mqtt-reporter
 StandardOutput=null
 #StandardOutput=syslog
 #SyslogIdentifier=ISPliDet
