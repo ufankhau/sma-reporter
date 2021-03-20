@@ -28,10 +28,10 @@ import sdnotify
 #signal(SIGPIPE,SIG_DFL)
 #
 #
-script_version = "0.5.1"
-script_name = 'sma-mqtt-daemon.py'
+script_version = "1.2.4"
+script_name = 'sma-mqtt-reporter.py'
 script_info = '{} v{}'.format(script_name, script_version)
-project_name = 'SMA Inverter Reporter MQTT2HA Daemon'
+project_name = 'SMA Inverter-MQTT2HA Reporter'
 
 # will use this throughout
 local_tz = get_localzone()
@@ -98,7 +98,7 @@ print_line(script_info, info=True)
 if opt_verbose:
 	print_line('Verbose enabled', info=True)
 if opt_logfile:
-	f = open(os.path.join(config_dir, 'sma-mqtt-daemon.log'), "w")
+	f = open(os.path.join(config_dir, 'sma-mqtt-reporter.log'), "w")
 	print_line("Logfile enabled", debug=True)
 if opt_debug:
 	print_line("Debug enabled", debug=True)
