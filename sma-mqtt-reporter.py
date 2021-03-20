@@ -296,8 +296,9 @@ def getDatafromSMAInverter():
 	global smainv_totalPdc
 	global smainv_efficiency
 
-# SBFspot -v2 -ad0 -am0 -finq -nosql
-	out = subprocess.Popen('/usr/local/bin/sbfspot.3/SBFspot -v2 -ad0 -am0 -finq -nosql',
+# SBFspot -v2 -ad0 -am0 -finq -nosql -nocsv
+	CMDstring = '/usr/local/bin/sbfspot.3/SBFspot -v2 -ad0 -am0 -finq -nosql -nocsv'
+	out = subprocess.Popen(CMDstring,
 		shell=True,
 		stdout=subprocess.PIPE,
 		stderr=subprocess.STDOUT)
