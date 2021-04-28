@@ -160,7 +160,7 @@ discovery_prefix = config['MQTT'].get('discovery_prefix', default_discovery_pref
 min_interval_in_minutes = 1
 max_interval_in_minutes = 10
 default_interval_in_minutes = 2
-interval_in_minutes = config['Daemon'].get('interval_in_minutes', default_interval_in_minutes)
+interval_in_minutes = config['Daemon'].getint('interval_in_minutes', default_interval_in_minutes)
 
 # default domain - check need for this variable
 
