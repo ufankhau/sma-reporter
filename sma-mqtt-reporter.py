@@ -32,6 +32,7 @@ script_version = "1.2.4"
 script_name = 'sma-mqtt-reporter.py'
 script_info = '{} v{}'.format(script_name, script_version)
 project_name = 'SMA Inverter-MQTT2HA Reporter'
+project_url = 'https://github.com/ufankhau/sma-reporter'
 
 # will use this throughout
 local_tz = get_localzone()
@@ -244,6 +245,7 @@ smainv_acphase3 = ''
 smainv_totalPac = ''
 smainv_totalPdc = ''
 smainv_efficiency = ''
+smainv_ip = ''
 
 # -------------------------------
 # monitor variable fetch routines
@@ -296,7 +298,7 @@ def getDatafromSMAInverter():
 	global smainv_totalPdc
 	global smainv_efficiency
 
-# SBFspot -v2 -ad0 -am0 -finq -nosql -nocsv
+	# SBFspot -v2 -ad0 -am0 -finq -nosql -nocsv
 	CMDstring = '/usr/local/bin/sbfspot.3/SBFspot -v2 -ad0 -am0 -finq -nosql -nocsv'
 	out = subprocess.Popen(CMDstring,
 		shell=True,
