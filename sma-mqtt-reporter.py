@@ -38,7 +38,7 @@ local_tz = get_localzone()
 
 if False:
 	# will be caught by python 2.7 to be illegal syntax
-	print_line("Sorry, this script requires a pyhton3 runtime environment.", file=sys.stderr)
+	print_line("Sorry, this script requires a python3 runtime environment.", file=sys.stderr)
 	os._exit(1)
 
 # construct the argument parse and parse the arguments
