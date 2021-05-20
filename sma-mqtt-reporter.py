@@ -449,9 +449,9 @@ else:
 sd_notifier.notify('READY=1')
 
 
-# ---------------------------------------
-# Perform MQTT Discovery Announcement ...
-# ---------------------------------------
+# ----------------------------------------
+# Perform MQTT Discovery Announcement ....
+# ----------------------------------------
 #
 # create uniqID using MAC address of speedwire adapter of SMA inverter
 #
