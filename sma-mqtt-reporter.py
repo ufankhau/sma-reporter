@@ -242,8 +242,8 @@ smainv_dcstring2 = ''
 smainv_acphase1 = ''
 smainv_acphase2 = ''
 smainv_acphase3 = ''
-smainv_totalPac = ''
-smainv_totalPdc = ''
+smainv_totalPac = 0
+smainv_totalPdc = 0
 smainv_efficiency = ''
 smainv_ip = ''
 
