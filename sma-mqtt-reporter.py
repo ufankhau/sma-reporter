@@ -228,8 +228,8 @@ smainv_software_version = ''
 smainv_serial_number = ''
 smainv_device_temperature = ''
 smainv_gridrelay_status = ''
-smainv_etoday = 0
-smainv_etotal = 0
+smainv_etoday = 0.0
+smainv_etotal = 0.0
 smainv_operation_time = ''
 smainv_feedin_time = ''
 smainv_gridfrequency = ''
@@ -242,9 +242,9 @@ smainv_dcstring2 = ''
 smainv_acphase1 = ''
 smainv_acphase2 = ''
 smainv_acphase3 = ''
-smainv_totalPac = 0
-smainv_totalPdc = 0
-smainv_efficiency = ''
+smainv_totalPac = 0.0
+smainv_totalPdc = 0.0
+smainv_efficiency = 0.0
 smainv_ip = ''
 
 # -------------------------------
