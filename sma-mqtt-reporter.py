@@ -363,10 +363,10 @@ def getDatafromSMAInverter():
 		if 'Efficiency' in currLine:
 			smainv_efficiency = float(currValue.strip('%'))
 			print_line("Efficiency: {}%".format(smainv_efficiency), debug=True)
-		if 'String 1' in currLine:
+		if 'MPPT 1 Pdc' in currLine:
 			smainv_dcstring1 = getDCstring_param(lineParts)
 			print_line("DC String 1 Tuple: {}".format(smainv_dcstring1), debug=True)
-		if 'String 2' in currLine:
+		if 'MPPT 2 Pdc' in currLine:
 			smainv_dcstring2 = getDCstring_param(lineParts)
 			print_line("DC String 2 Tuple: {}".format(smainv_dcstring2), debug=True)
 		if 'Calculated Total Pdc' in currLine:
