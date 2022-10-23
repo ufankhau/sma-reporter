@@ -631,7 +631,7 @@ def send_status(timestamp, nothing):
 	smainvData[SMAINV_SUNSET] = smainv_sunset
 	smainvData[SMAINV_SYSTEM_TEMP] = smainv_device_temperature
 	smainvData[SMAINV_ENERGY_TODAY] = float('{:.1f}'.format(smainv_etoday))
-	smainvData[SMAINV_ENERGY_TOTAL] = float('{:.0f}'.format(smainv_etotal))
+	smainvData[SMAINV_ENERGY_TOTAL] = float('{:.1f}'.format(smainv_etotal))
 	smainvData[SMAINV_PWR_INVOUT] = float('{:.2f}'.format(smainv_totalPac))
 	smainvData[SMAINV_PWR_INVIN] = float('{:.2f}'.format(smainv_totalPdc))
 	smainvData[SMAINV_FEEDIN] = smainv_feedin_time
