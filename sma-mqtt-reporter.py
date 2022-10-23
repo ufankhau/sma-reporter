@@ -469,6 +469,7 @@ print_line('uniqID: {}'.format(uniqID), debug=True)
 LD_MONITOR = "monitor"
 LD_SYS_TEMP = "temperature_inverter"
 LD_ENERGY_TODAY = "energy_today"
+LD_ENERGY_TOTAL = "energy_total"
 LD_PWR_INVOUT = "acpower_inverter"
 LD_PWR_INVIN = "dcpower_inverter"
 LD_ETA_INV = "efficiency"
@@ -486,6 +487,8 @@ detectorValues = OrderedDict([
 		icon='mdi:thermometer')),
 	(LD_ENERGY_TODAY, dict(title="SMA Inverter Energy Today", device_class="energy",
 		no_title_prefix="yes", json_value="energy_today", unit="kWh", icon='mdi:counter')),
+	(LD_ENERGY_TOTAL, dict(title="SMA Inverter Energy Total", device_class="energy",
+		state_class="total", no_title_prefix="yes", json_value="energy_total", unit="kWh", icon='mdi:counter')),
 	(LD_PWR_INVOUT, dict(title="SMA Inverter AC Power out", device_class="power",
 		no_title_prefix="yes", json_value="acpower_inverter", unit="kW", icon='mdi:solar-power')),
 	(LD_PWR_INVIN, dict(title="SMA Inverter DC Power in", no_title_prefix="yes",
@@ -523,6 +526,8 @@ for [sensor, params] in detectorValues.items():
 	payload['uniq_id'] = "{}_{}".format(uniqID, sensor.lower())
 	if 'device_class' in params:
 		payload['dev_cla'] = params['device_class']
+	if 'state_class' in params:
+		payload['stat_cla'] = params['state_class']
 	if 'unit' in params:
 		payload['unit_of_measurement'] = params['unit']
 	if 'json_value' in params:
