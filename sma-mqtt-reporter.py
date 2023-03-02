@@ -483,7 +483,7 @@ detectorValues = OrderedDict([
 		no_title_prefix="yes", json_value="timestamp", json_attr="yes", 
 		icon='mdi:solar-power', device_ident="SMA-INV-{}".format(smainv_serial_number))),
 	(LD_SYS_TEMP, dict(title="SMA Inverter Temperature", device_class="temperature", 
-		no_title_prefix="yes", unit="C", json_value="temperature_inverter", 
+		no_title_prefix="yes", unit="°C", json_value="temperature_inverter", 
 		icon='mdi:thermometer')),
 	(LD_ENERGY_TODAY, dict(title="SMA Inverter Energy Today", device_class="energy",
 		no_title_prefix="yes", json_value="energy_today", unit="kWh", icon='mdi:counter')),
